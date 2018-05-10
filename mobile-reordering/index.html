@@ -39,7 +39,7 @@
     </nav>
 
     <section class="hero">
-      <img src="http://lorempixel.com/1000/600/abstract">
+      <img src="https://picsum.photos/1000/600?random">
     </section>
 
     <section class="details">
@@ -59,18 +59,16 @@
       <p>&copy; Wes Bos</p>
     </footer>
 
-
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
     
-    $(function() {
-      $('.toggleNav').on('click',function() {
-        $('.flex-nav ul').toggleClass('open');
-      });
-    });
+    const toggleNav = document.querySelector('.toggleNav');
+    const flexNav = document.querySelector('.flex-nav ul');
 
+    toggleNav.addEventListener('click', () => {
+      flexNav.classList.toggle('open');
+    });
   </script>
 </body>
 </html>
