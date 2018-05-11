@@ -34,8 +34,8 @@ a {
 
 /* Flexbox Starts Here: */
 .elements {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item {
